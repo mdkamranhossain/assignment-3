@@ -41,50 +41,32 @@
 
     <!-- Header Section -->
     <header>
-        <nav class="container mx-auto">
-            <div class="navbar  bg-base-100 p-4">
-                <div class="navbar">
-                 <img src="images/logo-header.png" alt="">
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Product</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contact us</a></li>
-                  </ul>
-                </div>
-
-                <div class="navbar-start hidden lg:block">
-                    <i class="fa-solid fa-magnifying-glass  btn bg-transparent"></i>
-                    <i class="fa-solid fa-cart-shopping ml-3 btn bg-transparent"></i>
-                  <a class="ml-3 btn bg-[#179800] text-[#111111] bg-transparent border border-green-700 hover:text-white hover:bg-green-600">Login</a>
-                  <a class="ml-3 btn bg-[#179800] text-white hover:bg-green-600">Register</a>
-                </div>
-
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-8 w-8"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                      </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
-                      <li><a>Product</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contact us</a></li>
-                    </ul>
-                  </div>
+        <nav class="container mx-auto flex justify-between p-4 max-lg:border-b-2 max-lg:border-green-600">
+            <!-- logo -->
+             <div>
+              <img class="hidden lg:block" src="images/logo-header.png" alt="">
+              <img class="block lg:hidden" src="images/Group.png" alt="">
+             </div>
+             <!-- Menu -->
+             
+              <div class="space-x-4 hidden lg:block lg:pt-5">
+                <a class="hover:underline hover:text-green-700" href="">Product</a>
+                <a class="hover:underline hover:text-green-700" href="">Services</a>
+                <a class="hover:underline hover:text-green-700" href="">Contact Us</a>
               </div>
+             
+            <!-- Button -->
+              <div class="flex justify-between items-center hidden lg:block">
+                <i class="fa-solid fa-magnifying-glass   bg-transparent"></i>
+                <i class="fa-solid fa-cart-shopping ml-3  bg-transparent"></i>
+              <a class="ml-3 btn bg-[#179800] text-[#111111] bg-transparent border border-green-700 hover:text-white hover:bg-green-600">Login</a>
+              <a class="ml-3 btn bg-[#179800] text-white hover:bg-green-600">Register</a>
+            </div>
+
+            <div class="block lg:hidden flex items-center">
+              <i class="fa-solid fa-bars text-3xl text-[#179800]"></i>
+            </div>
+
         </nav>
 
         <!-- Hero section -->
@@ -278,7 +260,7 @@
 
 
         <!--Arrival & Offers section -->
-        <section class="py-10 lg:py-32 px-4">
+        <section class="py-10 lg:pt-32 px-4">
           <div class="container mx-auto">
               <div>
                   <h1 class="text-3xl lg:text-5xl font-bold pb-8 text-[#179800]">Arrival & Offers</h1>
@@ -315,6 +297,47 @@
 
 
     </main>
+
+
+      
+
+    <footer class="bg-[#179800] mt-60">
+
+
+      <div class="flex justify-center p-4 relative -top-50">
+        <div class="lg:flex items-center justify-center bg-sec rounded-2xl justify-evenly p-5">
+          <div>
+            <div><img src="images/vegetable-busket.png" alt=""></div>
+          </div>
+          <div class="space-y-5">
+            <h1 class="text-xl font-bold">Get Grocery News!</h1>
+            <p>Exclusive training tips, ticks, product deals and more.</p>
+            <input type="email" placeholder="Enter email...." class="input input-bordered w-full" />
+            <button class="bg-[#179800] text-white px-5 py-2 rounded-xl">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="flex-col flex lg:flex-row text-base-content px-10 container mx-auto gap-12 lg:items-center pt-30 lg:pt-50 relative -top-60">
+        <div class="flex-1">
+          <img src="images/logo-footer.png" alt="">
+          <p class="text-white pt-5">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <div class="flex-1">
+          <a class="link link-hover text-white">About us</a><br>
+          <a class="link link-hover text-white">Contact</a><br>
+          <a class="link link-hover text-white">Jobs</a>
+        </div>
+        <div class="flex-1">
+          <h6 class="text-white pb-5">Follow Us</h6>
+          <a class="link link-hover text-white mr-4 text-2xl"><i class="fa-brands fa-facebook fa-fw"></i></a>
+          <a class="link link-hover text-white mr-4 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+          <a class="link link-hover text-white text-2xl"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </footer>
+
+    </footer>
 
    
 
